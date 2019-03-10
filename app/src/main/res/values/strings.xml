@@ -15,4 +15,5 @@
     </string>
     <string name="title_activity_user_list">UserListActivity</string>
     <string name="title_activity_role_list">RoleListActivity</string>
+    <string name="title_activity_uom_list">UomListActivity</string>
 </resources>

@@ -33,7 +33,12 @@
             android:name=".RoleListActivity"
             android:label="@string/title_activity_role_list"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RoleCreateActivity"></activity>
+        <activity android:name=".RoleCreateActivity" />
+        <activity
+            android:name=".UomListActivity"
+            android:label="@string/title_activity_uom_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UomCreateActivity"></activity>
     </application>
 
 </manifest>
