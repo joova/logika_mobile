@@ -28,7 +28,12 @@
             android:name=".UserListActivity"
             android:label="@string/title_activity_user_list"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".UserCreateActivity"></activity>
+        <activity android:name=".UserCreateActivity" />
+        <activity
+            android:name=".RoleListActivity"
+            android:label="@string/title_activity_role_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RoleCreateActivity"></activity>
     </application>
 
 </manifest>
