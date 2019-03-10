@@ -1,5 +1,6 @@
 package com.joova.logika_mobile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -24,19 +25,14 @@ public class UomListActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         //buat list adapter
-        ArrayAdapter<String> uomAdpter = new ArrayAdapter<String>(this, R.layout.content_uom_list, R.id.text_username, uomArray);
+        ArrayAdapter<String> uomAdpter = new ArrayAdapter<String>(this, R.layout.content_uom_list, R.id.txt_uom_name, uomArray);
         ListView listViewUom = (ListView) findViewById(R.id.list_view_uom);
 
         listViewUom.setAdapter(uomAdpter);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
+    public void fabCreateClick(View view) {
+        Intent intent = new Intent(this, UomCreateActivity.class);
+        startActivity(intent);
+    }
 }
